@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Center - ShopEase</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9; /* Light background for a clean look */
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #f4d03f; /* Highlight color on hover */
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #4CAF50; /* Bright green accent */
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-section, .resources-section {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .faq-section h3, .resources-section h3 {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .faq-section p, .resources-section p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .faq-section ul, .resources-section ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Responsive Styling */
+    @media (max-width: 768px) {
+      main {
+        padding: 1rem;
+      }
+
+      .faq-section, .resources-section {
+        padding: 1rem;
+      }
+    }
+
+    /* Additional Enhancements */
+
+    /* Help Center Search Form Styling */
+    .search-form {
+      margin: 20px auto;
+      max-width: 400px;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .search-form input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .search-form input[type="submit"] {
+      padding: 8px 12px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Support Hours Table Styling (Layout Table with Invisible Borders) */
+    .support-hours table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+    }
+    .support-hours td {
+      padding: 8px;
+      /* Invisible borders: no border styling needed */
+    }
+
+    /* Back to Top Link Styling */
+    .back-to-top {
+      display: block;
+      text-align: right;
+      margin-top: 20px;
+      color: #4CAF50;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Adding an anchor for Back-to-Top functionality -->
+  <a id="top"></a>
+  <!-- Header with ARIA role for improved accessibility -->
+  <header role="banner">
+    <h1>ShopEase Help Center</h1>
+    <!-- Navigation with ARIA label -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="help-center.html">Help Center</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main content area with proper ARIA role -->
+  <main role="main">
+    <h2>How Can We Help You?</h2>
+
+    <!-- New: Help Center Search Form -->
+    <div class="search-form" role="search">
+      <form action="search-results.html" method="get">
+        <label for="help-search" style="font-weight: bold;">Search Help Center:</label>
+        <input type="text" id="help-search" name="q" placeholder="Type your question...">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+
+    <!-- FAQ Section (Original Code) -->
+    <div class="faq-section">
+      <h3>Frequently Asked Questions</h3>
+      <ul>
+        <li>Q: How can I track my order? <br> A: You can track your order by visiting the "My Orders" section in your account.</li>
+        <li>Q: What payment methods do you accept? <br> A: We accept credit cards, PayPal, and mobile money.</li>
+        <li>Q: What is your return policy? <br> A: You can return items within 30 days of purchase. Visit our Returns page for more details.</li>
+      </ul>
+    </div>
+
+    <!-- New: Support Hours Table -->
+    <div class="support-hours">
+      <h3>Support Hours</h3>
+      <table aria-label="Support Hours">
+        <tr>
+          <td>Monday - Friday:</td>
+          <td>8:00 AM - 8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday:</td>
+          <td>10:00 AM - 6:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday:</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Resources Section (Original Code) -->
+    <div class="resources-section">
+      <h3>Helpful Resources</h3>
+      <p>Find more support and helpful resources below:</p>
+      <ul>
+        <li><a href="https://www.shopease.com/shipping" target="_blank">Shipping Information</a></li>
+        <li><a href="https://www.shopease.com/returns" target="_blank">Return Policy</a></li>
+        <li><a href="https://www.shopease.com/contact-support" target="_blank">Contact Support</a></li>
+      </ul>
+    </div>
+
+    <!-- New: Back to Top Link -->
+    <a href="#top" class="back-to-top">Back to Top</a>
+  </main>
+  <!-- Footer with ARIA role for better semantic structure -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
