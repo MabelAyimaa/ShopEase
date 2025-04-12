@@ -1,0 +1,242 @@
+/* === General Styling === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Neutral background for a clean look */
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  nav ul li a:hover {
+    color: yellow; /* Highlight link on hover */
+  }
+  
+  nav ul li a.active {
+    color: yellow; /* Mark active page */
+  }
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* === Home Page Specific Styling === */
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between the images */
+    margin: 20px auto; /* Center the container */
+  }
+  
+  .image-container img {
+    width: 500px; /* Set a standard width for images */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Add border for styling */
+    border-radius: 5px; /* Rounded corners for images */
+  }
+  
+  /* Shop Now Button */
+  .shop-now {
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* Bright green background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* === Testimonials Page Styling === */
+  article {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  article:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+  }
+  
+  article h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  article p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  article .testimonial-footer {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+    margin-top: 1rem;
+  }
+  
+  /* === Help Center and Form Styling === */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin: 0.5rem 0 0.3rem;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%; /* Make input widths consistent */
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Back-to-Top Link */
+  .back-to-top {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    color: #45a049;
+  }
+  
+  /* === Members Page Styling === */
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  .member-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .member-card:hover {
+    transform: scale(1.05); /* Hover effect */
+  }
+  
+  .member-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .member-card .member-info {
+    padding: 1rem;
+  }
+  
+  .member-card .social-links {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .member-card .social-links a {
+    color: white;
+    background-color: #4CAF50;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .member-card .social-links a:hover {
+    background-color: #45a049;
+  }
+  
+  /* === Responsive Design Enhancements === */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .image-container img {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .members-grid {
+      padding: 1rem;
+    }
+  }  

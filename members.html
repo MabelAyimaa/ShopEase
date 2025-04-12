@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Members - ShopEase</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Members Section */
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 2rem;
+        }
+
+        .member-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: scale(1.05);
+        }
+
+        .member-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .member-info {
+            padding: 1rem;
+        }
+
+        .member-info h2 {
+            margin: 0.5rem 0;
+        }
+
+        .member-info p {
+            margin: 0.5rem 0;
+            color: #555;
+        }
+
+        .social-links {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-links a {
+            color: white;
+            background-color: #4CAF50;
+            padding: 0.5rem;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #45a049;
+        }
+
+        /* CSS Highlight Effect */
+        .member-card:target {
+            border: 3px solid #4CAF50;
+            box-shadow: 0 0 10px #4CAF50;
+        }
+
+        /* Search Bar Styling */
+        .search-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .search-container select {
+            width: 300px;
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Meet Our Team</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="help-center.html">Help Center</a></li>
+                <li><a class="active" href="members.html">Group Members</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Dropdown to Jump to Members -->
+        <div class="search-container">
+            <label for="search">Search by Name:</label>
+            <select id="search" onchange="location.href=this.value;">
+                <option value="#" selected>Select a Member</option>
+                <option value="#enoch-sarpong">Enoch Sarpong</option>
+                <option value="#mabel-ayimaa-asamoah">Mabel Ayimaa Asamoah</option>
+                <option value="#anyigba-emmanuel-mawuenyega">Anyigba Emmanuel Mawuenyega</option>
+                <option value="#dzisenu-sampson">Dzisenu Sampson</option>
+                <option value="#gborzo-gifty-edem">Gborzo Gifty Edem</option>
+                <option value="#addae-godwin">Addae Godwin</option>
+                <option value="#nutasey-bless">Nutasey Bless</option>
+            </select>
+        </div>
+
+        <!-- Members Section -->
+        <section class="members-grid">
+            <!-- Member: Enoch Sarpong -->
+            <div class="member-card" id="enoch-sarpong">
+                <img src="member images/Enoch Sarpong.jpg" alt="Enoch Sarpong">
+                <div class="member-info">
+                    <h2>Enoch Sarpong</h2>
+                    <p>ID: BEMAT/VR/04/23/0009</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Enoch Sarpong" target="_blank">F</a>
+                        <a href="https://twitter.com/Enoch Sarpong" target="_blank">X</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Member: Mabel Ayimaa Asamoah -->
+            <div class="member-card" id="mabel-ayimaa-asamoah">
+                <img src="member images/Mabel Ayimaa Asamoah.jpg" alt="Mabel Ayimaa Asamoah">
+                <div class="member-info">
+                    <h2>Mabel Ayimaa Asamoah</h2>
+                    <p>ID: BEMAT/VR/04/23/0039</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Mabel Ayimaa Asamoah" target="_blank">F</a>
+                        <a href="https://twitter.com/Mabel Ayimaa Asamoah" target="_blank">X</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Member: Anyigba Emmanuel Mawuenyega -->
+            <div class="member-card" id="anyigba-emmanuel-mawuenyega">
+                <img src="member images/Anyigba Emmanuel Mawuenyega.jpg" alt="Anyigba Emmanuel Mawuenyega">
+                <div class="member-info">
+                    <h2>Anyigba Emmanuel Mawuenyega</h2>
+                    <p>ID: BEMAT/VR/04/23/0016</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Anyigba Emmanuel Mawuenyega" target="_blank">F</a>
+                        <a href="https://twitter.com/Anyigba Emmanuel Mawuenyega" target="_blank">X</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Member: Dzisenu Sampson -->
+            <div class="member-card" id="dzisenu-sampson">
+                <img src="member images/Dzisenu Sampson.jpg" alt="Dzisenu Sampson">
+                <div class="member-info">
+                    <h2>Dzisenu Sampson</h2>
+                    <p>ID: BEMAT/VR/04/23/0004</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Dzisenu Sampson" target="_blank">F</a>
+                        <a href="https://twitter.com/Dzisenu Sampson" target="_blank">X</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Member: Gborzo Gifty Edem -->
+            <div class="member-card" id="gborzo-gifty-edem">
+                <img src="member images/Gborzo Gifty Edem.jpg" alt="Gborzo Gifty Edem">
+                <div class="member-info">
+                    <h2>Gborzo Gifty Edem</h2>
+                    <p>ID: BEMAT/VR/04/23/0011</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Gborzo Gifty Edem" target="_blank">F</a>
+                        <a href="https://twitter.com/Gborzo Gifty Edem" target="_blank">X</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Member: Addae Godwin -->
+            <div class="member-card" id="addae-godwin">
+                <img src="member images/Addae Godwin.jpg" alt="Addae Godwin">
+                <div class="member-info">
+                    <h2>Addae Godwin</h2>
+                    <p>ID: BEMAT/VR/04/23/0001</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Addae Godwin" target="_blank">F</a>
+                        <a href="https://twitter.com/Addae Godwin" target="_blank">X</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card" id="nutasey-bless">
+                <img src="member images/Nutasey Bless.jpg" alt="Nutasey Bless">
+                <div class="member-info">
+                    <h2>Nutasey Bless</h2>
+                    <p>ID: BEMAT/VR/04/23/0000</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Nutasey Bless" target="_blank">F</a>
+                        <a href="https://twitter.com/Nutasey Bless" target="_blank">X</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Other Members Follow Similar Structure -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ShopEase</p>
+    </footer>
+</body>
+</html>

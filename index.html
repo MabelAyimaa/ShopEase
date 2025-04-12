@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - ShopEase</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Added styling for the horizontal image layout */
+    .image-container {
+      display: flex;
+      justify-content: center; /* Center the images horizontally */
+      gap: 20px; /* Space between the images */
+      margin: 20px auto; /* Center the container */
+    }
+
+    .image-container img {
+      width: 500px; /* Set a standard width for images */
+      height: auto; /* Maintain aspect ratio */
+      border: 2px solid #ccc; /* Add border for styling */
+      border-radius: 5px; /* Rounded corners for images */
+    }
+
+    /* Shop Now Button Styling */
+    .shop-now {
+      display: inline-block;
+      margin-top: 20px; /* Space above the button */
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: #4CAF50; /* Bright green background */
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .shop-now:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    nav ul li a:hover {
+      color: yellow; /* Changes the link color to yellow on hover */
+    }
+
+    /* Active Navigation Link */
+    nav ul li a.active {
+      color: yellow; /* Active state styling */
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Additional Responsive Design Recommendations */
+    @media (max-width: 600px) {
+      .image-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 300px;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Added ARIA role for improved accessibility -->
+  <header role="banner">
+    <h1>Welcome to ShopEase</h1>
+    <!-- Added ARIA label to define the primary navigation -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <!-- Marking Home as active -->
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="help-center.html">Help Center</a></li>
+        <li><a href="members.html">Group Members</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Added role="main" for semantic structure -->
+  <main role="main">
+    <h2>Find Everything You Need, All in One Place!</h2>
+    <p>ShopEase is your one-stop shop for all your shopping needs. Quality products, unbeatable prices, and convenient shopping.</p>
+    
+    <!-- Image Container for Horizontal Layout -->
+    <div class="image-container">
+      <img src="images/Home Page.jpeg" alt="Store Image 1">
+      <img src="images/Home Page Image.jpeg" alt="Store Image 2">
+    </div>
+
+    <!-- Shop Now Button with ARIA label for extra accessibility -->
+    <a href="products.html" class="shop-now" aria-label="Proceed to Products Page">Shop Now!</a>
+  </main>
+  <!-- Footer with role for additional semantic clarity -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
