@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - ShopEase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Added ARIA role for improved accessibility -->
+  <header role="banner">
+    <h1>Welcome to ShopEase</h1>
+    <!-- Added ARIA label to define the primary navigation -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <!-- Marking Home as active -->
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="help-center.html">Help Center</a></li>
+        <li><a href="members.html">Group Members</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Added role="main" for semantic structure -->
+  <main role="main">
+    <h2>Find Everything You Need, All in One Place!</h2>
+    <p>ShopEase is your one-stop shop for all your shopping needs. Quality products, unbeatable prices, and convenient shopping.</p>
+    
+    <!-- Searching Products-->
+    <form action="search.html" method="GET" class="search-form">
+      <input type="text" name="query" placeholder="Search Products in ShopEase..." required>
+      <button type="submit">Search</button>
+    </form>
+    
+    
+     <section>
+      <!-- Image Container for Horizontal Layout -->
+      <div class="image-container">
+        <img src="images/Home Page.jpeg" alt="Store Image 1" class="store-image">
+        <img src="images/Home Page Image.jpeg" alt="Store Image 2" class="store-image">
+      </div>
+
+              <!-- Shop Now Button with ARIA label for extra accessibility -->
+              <a href="products.html" class="shop-now" aria-label="Proceed to Products Page">Shop Now!</a>
+    </section>
+
+    <section>
+      <h3>Featured Products</h3>
+      <p>Check out our latest arrivals and best sellers!</p>
+      <!-- Featured products displayed as images -->
+      <div class="featured-products image-container">
+      <img src="images/camera.jpg" alt="camera">
+      <img src="images/fitness watch.jpg" alt="fitness watch">
+      <img src="images/gaming console.jpg" alt="gaming console">
+      <img src="images/bluetooth speaker.jpg" alt="bluetooth speaker">
+      <img src="images/wireless mouse.jpg" alt="wireless mouse">
+      <img src="images/flat-screen tv.jpg" alt="flat-screen tv">
+      </div>
+    </section>
+
+    <section>
+      <h3>Special Offers</h3>
+      <p>Don't miss out on our limited-time offers!</p>
+      <!-- Special offers displayed as clickable horizontal tiles -->
+      <div class="special-offers">
+        <a href="offer1.html" class="offer-tile">
+          <div>
+            <h4>50% Off</h4>
+            <p>On selected items!</p>
+          </div>
+        </a>
+        <a href="offer2.html" class="offer-tile">
+          <div>
+            <h4>Free Shipping</h4>
+            <p>On orders over &#8373;600!</p>
+          </div>
+        </a>
+        <a href="offer3.html" class="offer-tile">
+          <div>
+            <h4>Buy One Get One Free</h4>
+            <p>On selected products!</p>
+          </div>
+        </a>
+        <a href="offer4.html" class="offer-tile">
+          <div>
+            <h4>Clearance Sale</h4>
+            <p>Up to 70% off!</p>
+          </div>
+        </a>
+        <a href="offer5.html" class="offer-tile">
+          <div>
+            <h4>New Arrivals</h4>
+            <p>Check out the latest products!</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h3>Join Our Community</h3>
+      <p>Become a member and enjoy exclusive benefits!</p>
+      <!-- Placeholder for membership information -->
+      <div class="membership-info">
+      <p>Sign up for our newsletter to stay updated!</p>
+      <!-- Button to sign up for the newsletter -->
+      <a href="contact.html" class="shop-now" aria-label="Sign up for our newsletter">Sign Up Now</a>
+      </div>
+    </section>
+
+    <section>
+      <h3>Help Center</h3>
+      <p>Need assistance? Visit our Help Center for FAQs and support.</p>
+      <!-- Placeholder for help center information -->
+      <div class="help-center">
+      <p>Frequently Asked Questions</p>
+      <p>Contact Support</p>
+      <!-- Button to navigate to Help Center page -->
+      <a href="help-center.html" class="shop-now" aria-label="Visit our Help Center">Visit Help Center</a>
+      </div>
+    </section>
+
+    <div class="horizontal-section-container">
+      <section class="horizontal-section about-us-section">
+      <h3>About Us</h3>
+      <p>Learn more about our mission and values.</p>
+      <!-- Button to navigate to About Us page -->
+      <a href="about.html" class="shop-now" aria-label="Learn more about us">Learn More</a>
+      </section>
+
+      <section class="horizontal-section">
+      <h3>Contact Us</h3>
+      <p>Have questions? Reach out to us!</p>
+      <!-- Button to navigate to Contact Us page -->
+      <a href="contact.html" class="shop-now" aria-label="Contact us">Get in Touch</a>
+      </section>
+
+      <section class="horizontal-section">
+      <h3>Group Members</h3>
+      <p>Meet the team behind ShopEase!</p>
+      <!-- Button to navigate to Group Members page -->
+      <a href="members.html" class="shop-now" aria-label="Learn more about the group members">Meet the Team</a>
+      </section>
+    </div>
+
+    <section>
+      <h3>Testimonials</h3>
+      <p>Read what our customers have to say!</p>
+      <div class="testimonials">
+      <blockquote>
+        <p>"ShopEase made my shopping experience so easy and enjoyable!"</p>
+        <footer>- Godwin A.</footer>
+      </blockquote>
+      <blockquote>
+        <p>"Great prices and fast delivery. Highly recommend!"</p>
+        <footer>- S. Enock</footer>
+      </blockquote>
+      <blockquote>
+        <p>"I found everything I needed in one place. Amazing service!"</p>
+        <footer>- Mabel A.</footer>
+      </blockquote>
+      </div>
+      <!-- Button to navigate to Testimonials page -->
+      <a href="testimonials.html" class="shop-now" aria-label="Read more testimonials">Read More Testimonials</a>
+    </section>
+
+    <section>
+      <h3>Help Center</h3>
+      <p>Need assistance? Visit our Help Center for FAQs and support.</p>
+      <!-- Button to navigate to Help Center page -->
+      <a href="help-center.html" class="shop-now" aria-label="Visit our Help Center">Visit Help Center</a>
+    </section>
+
+   <section>
+    <div class="newsletter">
+      <h3>Subscribe to Our Newsletter</h3>
+      <form action="subscribe.html" method="POST">
+          <input type="email" name="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+      </form>
+  </div>
+   </section>
+  
+   <div class="social-media">
+    <h3>Connect With Us</h3>
+    <a href="https://www.facebook.com/ShopEase" target="_blank">Facebook</a>
+    <a href="https://twitter.com/ShopEase" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/ShopEase" target="_blank">Instagram</a>
+</div>
+    
+  </main>
+  <!-- Footer with role for additional semantic clarity -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
