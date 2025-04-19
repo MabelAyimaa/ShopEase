@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - ShopEase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with ARIA role -->
+  <header role="banner">
+    <h1>Contact Us</h1>
+    <!-- Navigation with ARIA label -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="help-center.html">Help Center</a></li>
+        <li><a href="members.html">Group Members</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Main content area with ARIA role -->
+  <main role="main">
+    <h2>We'd Love to Hear From You!</h2>
+    <p>Fill out the form below and let us know how we can assist you:</p>
+    
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      
+      <label for="email">Email:</label>
+      <!-- Changed input type to 'email' for built-in validation -->
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      
+      <!-- Grouping radio buttons with fieldset and legend -->
+      <fieldset>
+        <legend>Are you a:</legend>
+        <div class="horizontal-group">
+          <input type="radio" id="male" name="role" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="role" value="female">
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+      
+      <!-- Grouping checkboxes with fieldset and legend -->
+      <fieldset>
+        <legend>Interests:</legend>
+        <div class="horizontal-group">
+          <input type="checkbox" id="newsletter" name="interests" value="newsletter">
+          <label for="newsletter">Subscribe to Newsletter</label>
+          <input type="checkbox" id="promo" name="interests" value="promo">
+          <label for="promo">Receive Promotions</label>
+        </div>
+      </fieldset>
+      
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <!-- Footer with ARIA role -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

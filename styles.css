@@ -1,0 +1,1388 @@
+/* === General Styling === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Neutral background for a clean look */
+    color: #333;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  nav ul li a:hover {
+    color: yellow; /* Highlight link on hover */
+  }
+  
+  nav ul li a.active {
+    color: yellow; /* Mark active page */
+  }
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  /* Added styling for the horizontal image layout */
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between the images */
+    margin: 20px auto; /* Center the container */
+  }
+
+  .image-container img {
+    width: 500px; /* Set a standard width for images */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Add border for styling */
+    border-radius: 5px; /* Rounded corners for images */
+    width: 50%; /* Set a max width for the container */
+  }
+
+  /* Shop Now Button Styling */
+  .shop-now {
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* Bright green background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .shop-now:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+  /* Search Form Styling */
+  .search-form {
+    display: flex;
+    flex-direction: column; /* Stack the input and button vertically */
+    align-items: center; /* Center the form elements */
+    margin: 20px auto; /* Center the form */
+  }
+  .search-form input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc; /* Border for the input field */
+    border-radius: 5px; /* Rounded corners for the input field */
+    width: 300px; /* Set a standard width for the input field */
+    margin-bottom: 10px; /* Add space below the input field */
+  }
+  .search-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* Bright green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .search-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  nav ul li a:hover {
+    color: yellow; /* Changes the link color to yellow on hover */
+  }
+
+  /* Active Navigation Link */
+  nav ul li a.active {
+    color: yellow; /* Active state styling */
+  }
+
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+
+  /* Additional Responsive Design Recommendations */
+  @media (max-width: 600px) {
+    .image-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .image-container img {
+      width: 100%;
+      max-width: 300px;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+    .special-offers {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 20px auto;
+    }
+
+    .offer-tile {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .offer-tile div {
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .offer-tile div:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .horizontal-section-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+
+    .horizontal-section {
+      width: 48%;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    .horizontal-section h3 {
+      margin-top: 0;
+    }
+
+    .horizontal-section p {
+      margin-bottom: 20px;
+    }
+
+
+    /* Featured Images Section */
+    .featured-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a grid with 3 columns */
+    gap: 20px; /* Add space between the images */
+    justify-items: center; /* Center images within their grid cells */
+    }
+
+    .featured-products img {
+    width: 350px; /* Reduce the width of the images */
+    height: 350px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .featured-products img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+    }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* === Home Page Specific Styling === */
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between the images */
+    margin: 20px auto; /* Center the container */
+  }
+  
+  .image-container img {
+    width: 500px; /* Set a standard width for images */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Add border for styling */
+    border-radius: 5px; /* Rounded corners for images */
+  }
+  
+  /* Shop Now Button */
+  .shop-now {
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* Bright green background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  /* === Testimonials Page Styling === */
+  article {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  article:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+  }
+  
+  article h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  article p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+
+
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      width: 100%; /* Ensures the background spans the full width */
+      box-sizing: border-box;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f4d03f; /* Highlight color on hover */
+    }
+
+    /* Active Navigation Link */
+    nav ul li a.active {
+      color: #f4d03f;
+    }
+
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      width: 100%; /* Ensures the footer spans the full width */
+      box-sizing: border-box;
+    }
+
+    /* Table Styling - Layout Table for Images */
+    .image-table {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    .image-table td {
+      padding: 10px; /* Reduced padding to minimize spacing */
+    }
+
+    /* Individual Image Resizing */
+    .smartphone,
+    .headphones,
+    .laptop,
+    .image-grid {
+      width: 300px; /* Resize product images */
+      height: auto;
+    }
+
+    /* Data Table Styling */
+    .data-table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+    }
+
+    .data-table th,
+    .data-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .data-table th {
+      background-color: #f4f4f4;
+    }
+    
+    /* Hover effect for rows in the data table */
+    .data-table tr:hover {
+      background-color: #f9f9f9;
+    }
+    
+    /* Caption for Data Table */
+    .data-table caption {
+      text-align: left;
+      font-weight: bold;
+      padding: 10px;
+    }
+    
+    /* Responsive Enhancements */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      
+      .smartphone,
+      .headphones,
+      .laptop,
+      .image-grid {
+        width: 100%;
+        max-width: 250px;
+      }
+      
+      .data-table {
+        width: 100%;
+      }
+    }
+  
+  article .testimonial-footer {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+    margin-top: 1rem;
+  }
+  
+  /* === Help Center and Form Styling === */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin: 0.5rem 0 0.3rem;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%; /* Make input widths consistent */
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Back-to-Top Link */
+  .back-to-top {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    color: #45a049;
+  }
+  
+  /* === Members Page Styling === */
+  .members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  .member-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .member-card:hover {
+    transform: scale(1.05); /* Hover effect */
+  }
+  
+  .member-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .member-card .member-info {
+    padding: 1rem;
+  }
+  
+  .member-card .social-links {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .member-card .social-links a {
+    color: white;
+    background-color: #4CAF50;
+    padding: 0.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .member-card .social-links a:hover {
+    background-color: #45a049;
+  }
+  
+  /* === Responsive Design Enhancements === */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .image-container img {
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .members-grid {
+      padding: 1rem;
+    }
+  }  
+
+  /* Added styling for the horizontal image layout */
+  .image-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Space between the images */
+    margin: 20px auto; /* Center the container */
+  }
+
+  .image-container img {
+    width: 500px; /* Set a standard width for images */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Add border for styling */
+    border-radius: 5px; /* Rounded corners for images */
+    width: 50%; /* Set a max width for the container */
+  }
+
+  /* Shop Now Button Styling */
+  .shop-now {
+    display: inline-block;
+    margin-top: 20px; /* Space above the button */
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50; /* Bright green background */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .shop-now:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+
+  /* Featured Images Section */
+  .featured-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create a grid with 3 columns */
+    gap: 20px; /* Add space between the images */
+    justify-items: center; /* Center images within their grid cells */
+    }
+
+    .featured-products img {
+    width: 350px; /* Reduce the width of the images */
+    height: 350px; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .featured-products img:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+    }
+
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  nav ul li a:hover {
+    color: yellow; /* Changes the link color to yellow on hover */
+  }
+
+  /* Active Navigation Link */
+  nav ul li a.active {
+    color: yellow; /* Active state styling */
+  }
+
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+
+  /* Additional Responsive Design Recommendations */
+  @media (max-width: 600px) {
+    .image-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .image-container img {
+      width: 100%;
+      max-width: 300px;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+  }
+
+  header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+  }
+
+  nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+  footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+  }
+
+  /* Members Section */
+  .members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+  }
+
+  .member-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+  }
+
+  .member-card:hover {
+      transform: scale(1.05);
+  }
+
+  .member-card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .member-info {
+      padding: 1rem;
+  }
+
+  .member-info h2 {
+      margin: 0.5rem 0;
+  }
+
+  .member-info p {
+      margin: 0.5rem 0;
+      color: #555;
+  }
+
+  .social-links {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+  }
+
+  .social-links a {
+      color: white;
+      background-color: #4CAF50;
+      padding: 0.5rem;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+  }
+
+  .social-links a:hover {
+      background-color: #45a049;
+  }
+
+  /* CSS Highlight Effect */
+  .member-card:target {
+      border: 3px solid #4CAF50;
+      box-shadow: 0 0 10px #4CAF50;
+  }
+
+  /* Search Bar Styling */
+  .search-container {
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+
+  .search-container select {
+      width: 300px;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+  }
+
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for a clean look */
+    color: #333;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav ul li a:hover {
+    color: #f4d03f; /* Highlight color on hover */
+  }
+
+  main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    color: #4CAF50; /* Bright green accent */
+    margin-bottom: 1.5rem;
+  }
+
+  .faq-section, .resources-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .faq-section h3, .resources-section h3 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  .faq-section p, .resources-section p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .faq-section ul, .resources-section ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    main {
+      padding: 1rem;
+    }
+
+    .faq-section, .resources-section {
+      padding: 1rem;
+    }
+  }
+
+  /* Additional Enhancements */
+
+  /* Help Center Search Form Styling */
+  .search-form {
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .search-form input[type="submit"] {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Support Hours Table Styling (Layout Table with Invisible Borders) */
+  .support-hours table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+  }
+  .support-hours td {
+    padding: 8px;
+    /* Invisible borders: no border styling needed */
+  }
+
+  /* Back to Top Link Styling */
+  .back-to-top {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+   /* Rollover Image Styling */
+   .rollover-img {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    background-image: url('images/Team1.jpeg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.8s ease;
+  }
+  .rollover-img:hover {
+    background-image: url('images/Team2.jpeg');
+  }
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .text-above-rollover {
+    margin: 20px 0;
+  }
+  .company-details {
+    margin: 30px auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  h2, h3 {
+    color: #333;
+  }
+  .hyperlinked-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  .hyperlinked-image img:hover {
+    transform: scale(1.05);
+  }
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: #f4d03f;
+  }
+  /* Active Navigation Link */
+  nav ul li a.active {
+    color: #f4d03f;
+  }
+  main {
+    padding: 1rem;
+    text-align: center;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  /* Responsive Enhancements */
+  @media (max-width: 768px) {
+    .rollover-img {
+      height: 200px;
+    }
+    .company-details {
+      padding: 1rem;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+   /* General Styling */
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for a clean look */
+    color: #333;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #f4d03f; /* Highlight color on hover */
+  }
+      /* Active Navigation Link */
+      nav ul li a.active {
+    color: #f4d03f;
+  }
+
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  h2 {
+    color: #4CAF50; /* Add a bright green accent for the heading */
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* Form Container */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    text-align: left; /* Align all form elements to the left */
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0 0.3rem;
+    font-weight: bold;
+  }
+
+  .horizontal-group {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between radio/checkbox and label */
+    margin-bottom: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    form {
+      padding: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+
+    input[type="submit"] {
+      padding: 0.7rem 1.2rem;
+      font-size: 0.9rem;
+    }
+
+    .horizontal-group {
+      flex-direction: column; /* Adjust to vertical layout on smaller screens */
+      align-items: flex-start;
+    }
+  }
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; /* Ensures the background spans the full width */
+    box-sizing: border-box;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #f4d03f; /* Highlight color on hover */
+  }
+
+  /* Active Navigation Link */
+  nav ul li a.active {
+    color: #f4d03f;
+  }
+
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%; /* Ensures the footer spans the full width */
+    box-sizing: border-box;
+  }
+
+  /* Table Styling - Layout Table for Images */
+  .image-table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  .image-table td {
+    padding: 10px; /* Reduced padding to minimize spacing */
+  }
+
+  /* Individual Image Resizing */
+  .smartphone,
+  .headphones,
+  .laptop,
+  .image-grid {
+    width: 300px; /* Resize product images */
+    height: auto;
+  }
+
+  /* Data Table Styling */
+  .data-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+
+  .data-table th,
+  .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .data-table th {
+    background-color: #f4f4f4;
+  }
+  
+  /* Hover effect for rows in the data table */
+  .data-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Caption for Data Table */
+  .data-table caption {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  /* Responsive Enhancements */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .smartphone,
+    .headphones,
+    .laptop,
+    .image-grid {
+      width: 100%;
+      max-width: 250px;
+    }
+    
+    .data-table {
+      width: 100%;
+    }
+  }
+
+  /* General Styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background for a clean look */
+    color: #333;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    color: #f4d03f; /* Highlight color on hover */
+  }
+  main {
+    padding: 2rem;
+  }
+  h2 {
+    text-align: center;
+    color: #4CAF50; /* Bright green accent for the heading */
+  }
+  
+  /* Testimonial Block Styling */
+  .testimonial {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    transition: transform 0.3s ease;
+  }
+  .testimonial:hover {
+    transform: scale(1.02);
+  }
+  .testimonial h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  .testimonial p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  .testimonial-footer {
+    text-align: right;
+    font-style: italic;
+    color: #888;
+    margin-top: 1rem;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  /* Back-to-Top Link Styling */
+  .back-to-top {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    main {
+      padding: 1rem;
+    }
+  }
